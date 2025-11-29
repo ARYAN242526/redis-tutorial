@@ -103,9 +103,7 @@ async function redisDataStructures(){
         await client.hDel('product:1' , 'rating')
 
         const updatedProductDetails = await client.hGetAll('product:1')
-        console.log(updatedProductDetails);
-        
-        
+        console.log(updatedProductDetails);    
 
     } catch (e) {
         console.error(e);
